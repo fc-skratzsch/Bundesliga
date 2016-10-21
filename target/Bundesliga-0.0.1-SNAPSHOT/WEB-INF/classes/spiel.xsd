@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://bundesliga.de" targetNamespace="http://bundesliga.de"
+	elementFormDefault="qualified">
+
+	<xs:element name="getSpielRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="servus" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getSpielResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="spiel" type="tns:spiel" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="spiel">
+		<xs:sequence>
+			<xs:element name="mannschaft" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+</xs:schema>
