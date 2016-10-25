@@ -4,7 +4,7 @@ import org.springframework.web.client.RestTemplate;
 
 public class HalloRest {
 
-	final String uri = "http://localhost:8082/greeting";
+	final String uri = "http://localhost:8080/hello-world";
 
 	public String getGreeting() {
 		RestTemplate rest = new RestTemplate();

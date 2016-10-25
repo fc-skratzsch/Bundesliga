@@ -53,7 +53,7 @@ public class BundesligaEndpoint {
 		
 		GetSpielResponse response = new GetSpielResponse();
 		
-		if (msg.getText().equals("Hello, World!")){
+		if (msg.getContent().equals("Hello, World!")){
 			
 			response.setSpiel(spiel);
 		} else {
